@@ -1,0 +1,133 @@
+body {
+  background: linear-gradient(180deg, rgb(255, 145, 0), rgb(255, 205, 66), rgb(255, 145, 0));
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* App.css */
+
+.canvas-container {
+  display: flex; /* Correct the display property */
+  justify-content: center; /* Center the canvas horizontally */
+  align-items: center; /* Center the canvas vertically */
+  width: 350px; /* Container width */
+  height: 350px; /* Container height */
+  border: 5px solid #007BFF; /* Border color and width */
+  border-radius: 50%; /* Make the border circular */
+  background-color: white; /* Background color for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for depth */
+  margin: 100px 0; /* Space above and below the canvas */
+}
+
+canvas {
+  display: block; /* Ensures no extra space around the canvas */
+  border-radius: 50%; /* Optional: round the corners of the canvas itself */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: white;
+}
+
+
+button {
+  color: white;
+  border: 2px solid transparent; /* Border matches button background */
+  font-size: 22px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #005f9e; /* Darker blue for hover effect */
+}
+
+#readout {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+#selector {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: rgb(0, 0, 0); /* Same shade of blue for the selector */
+  z-index: 3;
+}
+
+.prize-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: -40px;
+  z-index: 10;
+}
+
+.display {
+  height: 40px;
+}
+
+.prize-button {
+  background-color: #007BFF; /* Consistent blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.prize-button:hover {
+  background-color: #005f9e; /* Darker blue on hover */
+}
+
+.selected {
+  background-color: #004080; /* Even darker blue for selected state */
+}
+
+#spin, #reset {
+  font-size: 22px;
+  padding: 12px 30px;
+
+}
+
+#spin {
+  background-color: #007BFF;
+  color: white;
+  margin-bottom: 40px;
+}
+
+#reset {
+  background-color: #FF4500;
+  color: white;
+  margin-bottom: 40px;
+}
+
+#reset:hover {
+  background-color: #E04000;
+}
